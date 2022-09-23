@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---main container starts-->
+    <main class="container">
+        <!--Home start-->
+        <div class="home">
+            <h3>HOME</h3>
+            <div class="scoreboard-home">
+            <h2 id="home-score">0</h2>
+            </div>
+            <!--Buttons-->
+            <div class="buttons">
+                <button id="home-score-btn-1" onclick="increaseHomeScoreOne()">+1</button>
+                <button id="home-score-btn-2" onclick="increaseHomeScoreTwo()">+2</button>
+                <button id="home-score-btn-3" onclick="increaseHomeScoreThree()">+3</button>
+                <button id="home-reset-btn" onclick="resetHomeScore()">New Game</button>
+            </div>
+        </div>    
+        <!--Home end-->
+
+        <!--Guest start-->
+        <div class="guest">
+            <h3>GUEST</h3>
+            <div class="scoreboard-guest">
+            <h2 id="guest-score">0</h2>
+            </div>
+            <!--buttons-->
+            <div class="buttons">
+                <button id="guest-score-btn-1" onclick="increaseGuestScoreOne()">+1 </button>
+                <button id="guest-score-btn-2" onclick="increaseGuestScoreTwo()">+2 </button>
+                <button id="guest-score-btn-3" onclick="increaseGuestScoreThree()">+3 </button> 
+                <button id="guest-reset-btn" onclick="resetGuestScore()">New Game</button>        
+            </div>
+        <!--guest end-->
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
